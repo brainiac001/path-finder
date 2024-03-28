@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/pathfinder logo.png" type="image/png">
+    <title>Pathfinder School Website</title>
+    <style>
+        /* General CSS */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar CSS */
+        nav {
+            background-color: yellow;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        @media only screen and (max-width: 400px) {
+            li {
+                width: 33.33%;
+            }
+        }
+
+        li a {
+            display: block;
+            color: rgb(198, 40, 5);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color: rgb(255, 111, 79);
+        }
+
+        /* Hero Text CSS */
+        .hero-text {
+            text-align: center;
+            padding: 25vh 0;
+            background: #f2f2f2 url('./img/2023-01-20.jpg') no-repeat center/cover;
+            color: white;
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+            margin: 20px;
+        }
+
+        /* Section CSS */
+        .section {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        /* Gallery CSS */
+        .image-container {
+            width: 350px;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #ccc;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.495);
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Footer CSS */
+        .footer {
+            background-color: yellow;
+            padding: 50px;
+            text-align: left;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .end {
+            background-color: rgb(198, 40, 5);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .footer-links a,
+        .footer-links li {
+            color: black !important;
+            line-height: 5px;
+        }
+
+        .footer-links a:hover {
+            color: rgb(198, 40, 5) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero-text">
+        <h1>Welcome to Pathfinder Height Schools Website</h1>
+        <br><br><br>
+        <button type="submit">contact us</button>
+        <br>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <img class="logo" src="img/pathfinder logo white background.jpeg" alt="School Logo">
+        <div class="about-content">
+            <div>
+                <h3 class="about">Mission</h3>
+                <p>Empower students to excel academically and socially.</p>
+            </div>
+            <div>
+                <h3 class="about">Vision</h3>
+                <p>Be a leading institution inspiring innovation and excellence.</p>
+            </div>
+            <div>
+                <h3 class="about">Core Values</h3>
+                <p>Integrity, inclusivity, growth, and community commitment.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-section" id="gallery">
+        <h2>GALLERY</h2>
+        <div class="gallery-content">
+            <div class="image-container">
+                <img src="img/ICT.jpg" alt="Your Image">
+                <div class="caption">Our students doing robotics project.</div>
+            </div>
+            <div class="image-container">
+                <img src="img/DRONE.jpg" alt="Your Image">
+                <div class="caption">Our students flying drone.</div>
+            </div>
+            <div class="image-container">
+                <img src="img/GRAPHICS.jpg" alt="Your Image">
+                <div class="caption">Our young graphic designers</div>
+            </div>
+        </div>
+        <div class="gallery-content">
+            <div class="image-container">
+                <img src="img/meet-some-of -our-amazing-students.jpg" alt="Meet some of our Amazing Students">
+                <div class="caption">Meet some of our Amazing Students</div>
+            </div>
+            <div class="image-container">
+                <img src="img/Patherfinder-primary-school-science pratical.jpg"
+                    alt="Pathfinder Heights Primary School Science Practicals">
+                <div class="caption">Pathfinder Heights Primary School Science Practicals</div>
+            </div>
+            <div class="image-container">
+                <img src="img/social-week-celebration.jpg" alt="Social Week Celebration">
+                <div class="caption">Social Week Celebration</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Ourservices-section" id="services">
+        <h2>Our Services</h2>
+        <img class="logo" src="img/pathfinder logo.png" alt="School Logo" width="100%">
+        <div class="Ourservices-content">
+            <div class="serv">
+                <h3>pre-School</h3>
+                <p>Classes ranging from day care student to nursery two.<br>
+                    We have the best facilities to see to their moral cultural and educational growth<br>
+                </p><br><br>
+            </div>
+            <div class="serv">
+                <h3>Primary</h3>
+                <p>These includes classes from primary 1-5. <br>
+                    with our well trained tutors and our standard facility.
+                    we give our students the best educational experience they can have.</p><br>
+            </div>
+            <div class="serv">
+                <h3>Secondary</h3>
+                <p>Includes classes ranging from Jss1- SS3.<br>
+                    Our graduating students are well trained and have the best grades in external exams.<br>
+                    with sufficient training in I.C.T, sports, taekwondo, and many more.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="form-content" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <h3>Have Questions? Ask Away!</h3><br>
+            <form action="process_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div>
+                <img class="logo" src="img/pathfinder logo.png" alt="School Logo" width="80px">
+                <p>In Pathfinder height school we offer professional training services with standard facilities and qualified teachers. <br> Our
+                    staffs are well trained and have all the necessary materials they need to teach the students. <br>Our
+                    extra curricular activities are top edg with activities ranging from; <b>taekwondo, football, coding
+                        and robotics club, e.t.c</b>.</p>
+            </div>
+
+            <div>
+                <h3>LINKS</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>OUR ADDRESS</h3>
+                <p>No:3 babatope street Akinjoe bus stop satellite Town Lagos</p><br>
+                <h3>CONTACT US @</h3>
+                <ul class="navbar-nav" style="font-family: Georgia, 'Times New Roman', Times, serif; color: white;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/facebook.svg" alt="facebook" width="40px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a hover class="nav-link" href="#"><img src="img/whatsapp.svg" alt="whatsapp"
+                                width="40px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/twitter.svg" alt="twitter" width="40px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/phone-square-alt.svg" alt="phonr" width="40px"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <marquee style="direction: right; color: white;">
+            <center>copy write 2023 pathfinder schools &copy</center>
+        </marquee>
+    </div>
+</body>
+
+</html>

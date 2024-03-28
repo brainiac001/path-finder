@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Contact Form with Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    .caption {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .green-text {
+      color: green;
+    }
+    .red-text {
+      color: red;
+    }
+    .form-container {
+        margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-wrapper {
+      width: 100%;
+      max-width: 400px; /* Adjust maximum width as needed */
+    }
+    .form-wrapper form {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-wrapper form label {
+      color: green;
+    }
+    .form-wrapper form input[type="text"],
+    .form-wrapper form input[type="email"],
+    .form-wrapper form textarea {
+      border-color: green;
+      border-color: red;
+      outline: red;
+    }
+    .form-wrapper form button[type="submit"] {
+      background-color: green;
+      border-color: green;
+    }
+    .form-wrapper form button[type="submit"]:hover {
+      background-color: #218838;
+      border-color: #218838;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 form-container">
+        <!-- Caption Image and Text -->
+        <div class="caption">
+            <h3 class="">Get in Touch</h3>
+
+          <img src="https://via.placeholder.com/350" alt="Caption Image">
+        </div>
+      </div>
+      <div class="col-md-6 form-container">
+        <!-- Contact Form -->
+        <div class="form-wrapper">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputName">Name</label>
+              <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputMessage">Message</label>
+              <textarea class="form-control" id="exampleInputMessage" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
